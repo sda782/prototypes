@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Sketchy</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1920 height=1080 style="width: 1920px; height: 1080px; background: #231F20"></canvas>
+    <canvas id="unity-canvas" width=900 height=506 style="width: 900px; height: 506px; background: #231F20"></canvas>
     <script src="Build/sketchy.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/sketchy.data.gz",
-        frameworkUrl: "Build/sketchy.framework.js.gz",
-        codeUrl: "Build/sketchy.wasm.gz",
+        dataUrl: "Build/sketchy.data.br",
+        frameworkUrl: "Build/sketchy.framework.js.br",
+        codeUrl: "Build/sketchy.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "aevumdev",
         productName: "Sketchy",
